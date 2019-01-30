@@ -1,0 +1,31 @@
+section.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.information .card {
+    flex-wrap: wrap;
+    padding: 1vh;
+    margin: 2vh;
+}
+
+section.quicklinks {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+body section.content {
+    padding: 10vh;
+}
+
+a, a:hover {
+    color: unset;
+    font-weight: bolder;
+}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS/ECE 374 - Schedule, Notes, and Handouts</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">CS 374: Introduction to Algorithms & Models of Computation</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="lectures.html">Lectures</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="homework.html">Homework</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule and Office Hours</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+ 
+    <title>CS/ECE 374 - Schedule, Notes, and Handouts</title>
+    <section class="content">
+
+    <div class="jumbotron">
+    <h1 class="display-3">Lecture and Lab Schedule</h1>
+    <p class="lead">
+        The calendar below lists the topics of each lecture and lab section for the semester, with links to relevant lecture notes, slides, lecture videos, and lab handouts. Topics for future lectures and labs are subject to change; exam dates are not.
+    </p>
+    </div>
+
+    <a href="https://echo360.org">Link to recording of lectures</a>
+
+    <table border=1 frame=hsides rules=rows>
+
+        <colgroup>
+            <col style="background-color:#dddddd; width:10%" />
+            <col style="background-color:#ffffff; width:30%" />
+            <col style="background-color:#eeeeee; width:12%" />
+            <col style="background-color:#ffffff; width:30%" />
+            <col style="background-color:#eeeeee; width:12%" />
+        </colgroup>
+        <thead>
+            <tr style="background:#ccc">
+                <th>Week</th>
+                <th>Tuesday Lecture</th>
+                <th>Wednesday Lab</th>
+                <th>Thursday Lecture</th>
+                <th>Friday Lab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ============================================================== 
+             =      WEEK 1               ================================== 
+             ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">1</font>
+                    <br> Jan 14- 18
+                </th>
+
+                <!-- Tuesday -->
+                <td style="background:#eff">
+                    <a href="about.html">Adminis</a>+<a href="hw-policies.html">trivia</a> and course goals
+                    <br />
+                    <a href="notes/00-intro.pdf">Introduction and history</a>;
+                    <a href="notes/models/01-strings.pdf">strings</a>
+                    <br />
+                    <small>L1: [<a href="slides/01_intro.pdf">slides1</a>,
+              <a href="slides/01_strings_languages.pdf">slides2</a>]
+              <br>
+              Scribbles: 
+              <a href="lec_a/01_15_19.pdf">A</a>,
+              <a href="lec_b/01_15_19.pdf">B</a>.
+            </small>
+                </td>
+
+                <!-- Wednesday -->
+                <td style="background:#dee">
+                    <a href="labs/lab_01_a.pdf">String induction</a>
+                    <br />
+                    <small>[<a href="notes/98-induction.pdf">induction notes</a>,
+              <a href="../fa2015/notes/induction-notes.pdf">more</a>]
+              [<a href="labs/sol/lab_01_a_sol.pdf">solutions</a>]
+            </small>
+                </td>
+
+                <!-- Thursday -->
+                <td style="background:#eff">
+                    <a href="notes/models/02-regular.pdf">Languages and regular
+              expressions</a>
+                    <br><small>L2: [<a href="slides/02_reg_langs.pdf"
+                            >slides</a>]
+             <br>
+              Scribbles: 
+              <a href="lec_a/01_17_19.pdf">A</a>,
+              <a href="lec_b/01_17_19.pdf">B</a>.
+             </small>
+                </td>
+
+                <!-- Friday -->
+                <td style="background:#dee"><a href="labs/lab_01_b.pdf">Regular expressions</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_01_b_sol.pdf"
+                    >solutions</a>]</small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 2               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">2</font>
+                    <br> Jan 21-25</th>
+                <!-- Tuesday -->
+                <td style="background:#eff">
+                    <a href="notes/models/03-automata.pdf">DFAs, product construction</a>
+                    <br>
+                    <small>[<a href="http://www.automatatutor.com/index"
+                      >Automata Tutor</a>]
+                <a href="notes/models/DFAproofs.pdf"
+                >DFA Proofs</a> </small>
+                    <br>
+                    <small>L3: [<a href="slides/03_dfa.pdf">slides</a>]
+               <br>
+              Scribbles: 
+              <a href="lec_a/01_22_19.pdf">A</a>,
+              <a href="lec_b/01_22_19.pdf">B</a>.
+              </small>
+
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#dee">
+                    <a href="labs/lab_02_a.pdf">DFA construction</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_02_a_sol.pdf"
+                      >solutions</a>]</small>
+                </td>
+
+                <!-- Thursday -->
+                <td style="background:#eff">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/models/NFAnotes.pdf">Non-determinism, NFAs </a>
+                    <br><a href="notes/models/04_nfa.pdf">Jeff's NFA notes</a>
+                    <br>
+                    <small>L4: [<a href="slides/04_nfa.pdf">slides</a>]
+             <br>
+              Scribbles: 
+              <a href="lec_a/01_24_19.pdf">A</a>,
+              <a href="lec_b/01_24_19.pdf">B</a>.
+           </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#dee"><a href="labs/lab_02_b.pdf">DFA product construction</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_02_b_sol.pdf"
+                      >solutions</a>]</small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 3               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">3</font>
+                    <br> Jan 28
+                    <br>-Feb 1</th>
+                <!-- Tuesday -->
+                <td style="background:#eff">
+                    <a href="notes/models/NFAnotes.pdf">NFAs continued, equivalence with DFAs and regular
+                expressions</a>
+                    <br><a href="notes/models/04_nfa.pdf">Jeff's NFA notes</a>
+                    <br>
+                    <a href="extra_notes/01_nfa_to_reg.pdf">Converting NFA to regex</a>
+                    <br>
+
+                    <small>L5: [<a href="slides/05_nfa_reg_lang_closure.pdf"
+                          >slides</a>]
+
+             <br>
+              Scribbles: 
+              <a href="lec_a/01_29_19.pdf">A</a>,
+              <a href="lec_b/01_29_19.pdf">B</a>.
+
+</small>
+                </td>
+
+                <!-- Wednesday -->
+                <td style="background:#dee">
+                    <a href="labs/lab_03_a.pdf">DFA/NFA transformation</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_03_a_sol.pdf"
+                      >solutions</a>]</small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#eff">
+                    <a href="notes/models/03-automata.pdf">Proving non-regularity via fooling sets</a>
+                    <br><small>
+                [<a href="notes/models/DFAproofs.pdf"
+                 >DFA Proofs</a>]
+                [<a href="../sp2016/notes/fooling_sets_guide_v6.pdf"
+                 >Fooling sets guide</a>]</small>
+                    <br>
+                    <small>L6: [<a href="slides/06_non_regularity.pdf"
+                          >slides</a>]</small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#dee"><a href="labs/lab_03_b.pdf">Proving nonregularity</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_03_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 4               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">4</font>
+                    <br> Feb 4-8</th>
+                <!-- Tuesday -->
+                <td style="background:#eff">
+                    <a href="notes/models/05-context-free.pdf">Context-free languages and grammars</a>
+                    <br>
+                    <small>
+	        L7: [<a href="slides/07_cfg.pdf"
+                     >slides</a>]
+	      </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#dee"><a href="labs/lab_04_a.pdf">Context-free grammars</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_04_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#eff">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/models/06-turing-machines.pdf">Turing machines: history, formal definitions,
+                examples, variations</a>
+                    <br><small>
+	        L8: [<a href="slides.old/08-TMs.pdf"
+                     >slides</a>]
+	        </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#dee"><a href="labs/lab_04_b.pdf">Regular or not?</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_04_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 5               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">5</font>
+                    <br> Feb 11-15</th>
+                <!-- Tuesday -->
+                <td style="background:#eff">
+                    <a href="notes/halting.pdf">Halting and undecidability</a>
+                    <br><small>
+	        [NO SLIDES]
+	      </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#dee"><a href="labs/lab_05_a.pdf">Turing machine design</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_05_a_sol.pdf"
+                      >solutions</a>] </small>
+                    <!-- Thursday -->
+                </td>
+                <td style="background:#eff"><em>
+              <a href="exams/mt_1_fodder.pdf"
+              >Optional review for Midterm 1</a></em>
+                </td>
+                <!-- Friday -->
+                <td style="background:#dee">
+                    <em><a href="exams/mt_1_fodder.pdf"
+                  >Optional review for Midterm 1</a></em>
+
+                </td>
+            </tr>
+
+            <!-- ====== MIDTERM 1 ====== -->
+            <tr>
+                <th colspan="5" style="background:#dee"><a href="exams/mt_1/skillset_midterm_1.pdf">Skillset for midterm
+              1</a>
+                </th>
+            </tr>
+            <tr>
+                <br>
+                <br>
+                <th colspan="5" style="background:#dee">Midterm 1: Monday, February 18, 7-9pm (
+                    <a href="midterm_1/rooms.html">rooms</a>)
+                    <br />
+
+                    <small>Conflict exam: TBD TBD</small></th>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 6               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">6</font>
+                    <br> Feb 18-22</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/01-recursion.pdf">Recursion: Hanoi, mergesort</a>
+                    <br><small>
+	        [<a href="slides/10_recursion_divide_conquer.pdf"
+                 >slides</a>][<a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/99-recurrences.pdf"
+                              >solving recurrences</a>]
+	      </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_06_a.pdf">Hint: Binary search</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_06_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/01-recursion.pdf">Divide and conquer: linear-time selection,
+                Karatsuba multiplication</a>
+                    <br />
+                    <small>[<a href="notes/99-recurrences.pdf"
+                      >recurrence notes</a>]
+                [<a href="slides/11_recursive_selection.pdf"
+                 >slides</a>]
+	      </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed"><a href="labs/lab_06_b.pdf">Divide and conquer</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_06_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 7               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">7</font>
+                    <br> Feb 25
+                    <br> -Mar 1</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe">
+                    <a href="notes/02-backtracking.pdf">Backtracking: independent set, longest
+                increasing subsequence</a>
+                    <br><small>
+	        [<a href="slides/12_backtracking_memoization.pdf"
+                 >slides</a>]</small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_07_a.pdf">Backtracking</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_07_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe">
+                    <a href="notes/03-dynprog.pdf">Dynamic programming: splitting strings,
+                longest increasing subsequence</a>
+                    <br><small>
+	        [<a href="slides/13_dprog_intro.pdf"
+                 >slides</a>]</small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed"><a href="labs/lab_07_b.pdf">Dynamic programming</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_07_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 8               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">8</font>
+                    <br> Mar 4-8</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe">
+                    <a href="notes/03-dynprog.pdf">More DP: Edit Distance, MIS in trees</a>
+                    <br>
+                    <a href="extra_notes/dp_imp_exp.pdf">memoization and edit distance</a>
+                    <br>
+                    <small>
+	        [<a href="slides/14_more_dp.pdf"
+                 >slides</a>]
+              </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_08_a.pdf">More dynamic programming</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_08_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe"><a href="https://en.wikipedia.org/wiki/CYK_algorithm">CYK Algorithm</a>,
+                    <a href="notes/05-graphs.pdf">Graphs, basic search</a>
+                    <br>
+                    <small>
+                [<a href="slides/15_morer_dp.pdf"
+                 >CYK</a>, <a href="slides/15_graph_search.pdf"
+                           >Graph search slides</a>] </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed"><a href="labs/lab_08_b.pdf">Yet even still more dynamic programming</a>
+                    <br />
+                    <strong class="dammit">Drop deadline</strong>
+                    <br />
+                    <small>[<a href="labs/sol/lab_08_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 9               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">9</font>
+                    <br> Mar 11-15</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/06-dfs.pdf">Directed graphs, depth-first search</a>
+                    <br>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_09_a.pdf">Graph modeling</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_09_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe">
+                    <small>
+                DFS/Strong connected compoments<br>
+	        [<a href="slides/16_dir_graphs_dfs.pdf"
+                 >slides</a>]
+	      </small>
+                    <br>
+                    <small>	[<a href="notes/graph-notes.pdf"
+                         >Graph notes</a>]
+	      </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed"><a href="labs/lab_09_b.pdf">Graph modeling</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_09_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ==============================================================
+               =      Spring vacation ================================
+               ============================================================== -->
+            <tr>
+                <th><b>Mar 16-24</b></th>
+                <td align="center" colspan="3"><b>Don't give thanks, go on vacation anyway.</b></td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 10               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">10</font>
+                    <br> Mar 25- 29</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe">
+                    <a href="notes/08-sssp.pdf">BFS and Shortest Paths</a>
+                    <br><small>
+	        [<a href="slides/17_shortest_paths.pdf"
+                 >slides</a>]
+	      </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_10_a.pdf">Shortest paths</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_10_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe">
+                    <a href="notes/08-sssp.pdf">Shortest Paths with Negative Lengths via DP</a>
+                    <br><small>
+                [<a href="slides/18_dyn_prog_shortest_paths.pdf"
+                 >slides</a>]
+              </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed"><a href="labs/lab_10_b.pdf">More shortest paths</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_10_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 11               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">11</font>
+                    <br> Apr 1-5</th>
+                <!-- Tuesday -->
+                <td style="background:#ffe"><a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/07-greedy.pdf">Greedy algorithms</a>
+                    <br><small>
+	      [<a href="slides/19_greedy.pdf"
+               >slides</a>]
+	                                </small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#eed"><a href="labs/lab_11_a.pdf">Greedy</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_11_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#ffe">
+                    <a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/20-mst.pdf">MST Algorithms</a>
+                    <br>
+                    <small>[<a href="slides/20_mst.pdf"
+                      >slides</a>]</small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#eed">
+                    <em>
+                <a href="exams/mt_2_fodder.pdf"
+                >Optional review for Midterm 2</a>
+              </em>
+                </td>
+            </tr>
+            <!-- ====== MIDTERM 2 ====== -->
+            <tr>
+                <th colspan="5" style="background:#dee"><a href="exams/mt_2/mt_2_skillset.pdf">Skillset for midterm
+              2</a>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="5" style="background:#eed">Midterm 2: Monday, April 8, 7-9pm
+                    <br /> (
+                    <a href="midterm_2/rooms.html">rooms</a>)
+                    <br />
+                    <br>
+                    <small>Conflict exam: TBD TBD 
+              </small>
+                </th>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 12               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">12</font>
+                    <br>Apr 8-12</th>
+                <!-- Tuesday -->
+                <td style="background:#fef">No lecture in lieu of midterm</td>
+                <!-- Wednesday -->
+                <td style="background:#ede"><a href="labs/lab_12_a.pdf">MST</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_12_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#fef">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    <a href="notes/models/07-undecidable.pdf">Undecidability: halting problem, diagonalization, reductions</a>
+                    <br><small>
+ 	        [<a href="slides/21_undecidablity_2.pdf"
+                 >slides</a>]
+	      </small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#ede"><a href="labs/lab_12_b.pdf">Undecidability via reductions</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_12_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 13               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">13</font>
+                    <br> Apr 15-19</th>
+                <!-- Tuesday -->
+                <td style="background:#fef"><a href="notes/10-nphard.pdf">Polynomial time Reductions</a>
+                    <br>
+                    <small>[<a href="slides/22_poly_reductions.pdf"
+                      >slides</a>]</small>
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#ede"><a href="labs/lab_13_a.pdf">Self Reductions</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_13_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#fef">
+                    <!--<b class=dammit><small>♥</small></b>-->
+                    <a href="notes/10-nphard.pdf">NP, NP-Completeness,
+                3SAT to Independent Set</a>
+                    <br>
+
+                    <small>
+                [<a href="slides/23_poly_reductions_II.pdf"
+                 >Slides</a>]
+              </small>
+
+                    <br>
+                    <small>[<a href="https://www.youtube.com/watch?v=YX40hbAHx3s">helpful video on P vs NP]</a></small>
+                </td>
+                <!-- Friday -->
+                <td style="background:#ede"><a href="labs/lab_13_b.pdf">NP-hardness proofs</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_13_b_sol.pdf"
+                      >solutions</a>] </small> </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 14               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">14</font>
+                    <br> Apr 22-26</th>
+                <!-- Tuesday -->
+                <td style="background:#fef">
+                    <a href="notes/10-nphard.pdf">More NP-hardness reductions: 3-coloring, Hamiltonian cycle</a>
+                    <br>
+                    <small>[<a href="slides/24_npc.pdf"
+                 >Slides</a>]</small>
+
+                </td>
+                <!-- Wednesday -->
+                <td style="background:#ede"><a href="labs/lab_14_a.pdf">NP-Hardness, the final chapter</a>
+                    <br />
+                    <small>[<a href="labs/sol/lab_14_a_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+                <!-- Thursday -->
+                <td style="background:#fef">
+                    <!--<b class=dammit><small>★</small></b>-->
+                    More more more NP Completeness.
+
+                    <br/>
+                    <small>[<a href="slides/25_csat_cook.pdf"
+                      >slides</a>]</small></br>
+                    <strong class="dammit">ICES Forms</strong>
+                </td>
+                <!-- Friday -->
+                <td style="background:#ede"><a href="labs/lab_14_b.pdf">Using Rice's Theorem</a>
+                    <br />
+                    <strong class="dammit">ICES Forms</strong>
+                    <br />
+                    <small>[<a href="labs/sol/lab_14_b_sol.pdf"
+                      >solutions</a>] </small>
+                </td>
+            </tr>
+
+            <!-- ============================================================== 
+               =      WEEK 15               ================================== 
+               ============================================================== -->
+            <tr>
+                <th><font color="red" size="+1">15</font>
+                    <br> Apr 29
+                    <br>-May 3</th>
+                <!-- Tuesday -->
+                <td>Wrap-up and preliminary review for the final exam</td>
+                <!-- Wednesday -->
+                <td><a href="../fa2016/exams/final-fodder.pdf">Review for final</a>
+                </td>
+                <!-- Thursday -->
+                <td>Reading Day</td>
+                <!-- Friday -->
+                <td>
+
+                </td>
+            </tr>
+            <!-- FINAL -->
+            <tr>
+                <th colspan="5"><a href="exams/final/skillset_final.pdf">Skill
+              set for final</a>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="5" style="background:#fff">Final exam:
+                    <a href="https://registrar.illinois.edu/fallschedulingguidelines_public">TBD TBD</a>.
+                    <br />
+                    <small>Conflict final: TBD TBD TBD</small></th>
+            </tr>
+        </tbody>
+    </table>
+
+    Some additional notes:
+    <ol>
+        <li>
+            <a href="notes/03_nfa_and_neg.pdf">Negating
+            NFA directly is a bad idea</a>.
+        </li>
+
+    </ol>
+
+    <hr> Some of the lectures in handout format are <a href="slides/handouts/">here</a>.
+    <hr>
+    <!-- Calendars stuff -->
+    <a href="misc/holydays.html">holydays</a> :
+    <a href="https://senate.illinois.edu/ep0945.html">academic calendar</a>.
+
+    <a href="https://courses.illinois.edu/schedule/2019/spring/CS/374">Rooms</a>
+
+    <!-- Time stamp -->
+    <hr>Last modified: Tue 2019-01-15 19:47:05 UTC 2019 by Sariel Har-Peled</p>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    </section> 
+</body>
+
+</html>

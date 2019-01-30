@@ -1,0 +1,651 @@
+<html>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">CS 374: Introduction to Algorithms & Models of Computation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="lectures.html">Lectures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homework.html">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule and Office Hours</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="jumbotron">
+            <h1 class="display-3">Academic Integrity Policy</h1>
+        </div>
+        
+        <section class="content">
+        <ul class=compact>
+            <li> <a href="#logistics">Homework Logistics</a>: How to submit</li>
+            <li> <a href="#form">Form:</a> How to write</li>
+            <li> <a href="#content">Content:</a> What to write</li>
+            <li> <a href="#nolate">Absolutely no late homework.</a></li>
+            <li> <a href="#honest">Don't plagiarize!</a></li>
+            <li> <a href="#sins">Avoid the Three Deadly Sins.</a></li>
+        </ul>
+
+        <p>I apologize in advance for the length of this document. Most of this stuff is obvious to almost everybody, but after teaching this class for many years, I've seen a <em>lot</em> of strange things.</p>
+
+        <hr>
+        <h3 id="logistics">Homework Logistics: How to submit</h3>
+
+        <ul>
+            <li>
+                <b>All homework solutions must be submitted electronically via
+        Gradescope</b>. Submit one PDF file for each numbered homework problem. Gradescope will not accept other file formats such as plain text, HTML, LaTeX source, or Microsoft Word (.doc or .docx).
+            </li>
+
+            <li>You can register with Gradescope using any name and email address you like. If you are using an alias or a non-university email address on Gradescope, please
+                <a href="https://learn.illinois.edu/mod/questionnaire/view.php?id=1937214">tell us who you are</a> so we can give you credit for your homework.
+                <b>If you are not logging into Gradescope with your real name
+         or university email address, do not include your real name or
+         your university email address in your homework solutions.</b>
+            </li>
+
+            <li>Homework solutions may be submitted by groups of <b>at most three</b> students. We
+                <em>strongly</em> encourage (but will not require) every student to work in a group with at least one other student. Students are are responsible for forming their own homework groups. Groups may be different for each numbered homework problem.
+
+                <ul>
+                    <li>
+                        <b>For group solutions, <b class=dammit>exactly one</b> member of each group submits the solution to each problem.</b> Even if the groups are identical, the submitter may be different for each numbered homework problem.
+                    </li>
+
+                    <li> Whoever submits any group solution must also submit the names of the other group members via Gradescope. Gradescope will then automatically apply the grade for that submission to all group members. If this information is not entered correctly, the other group members' grades will be delayed or possibly lost entirely.
+                    </li>
+
+                    <li>If you discover that your name was omitted from a group homework submission,
+                        <b>please submit a regrade request.</b>
+                    </li>
+                </ul>
+            </li>
+
+            <li>As error correction, each submitted homework solution should include the following information in large friendly letters at the top of the first page.
+                <ul class=compact>
+                    <li> The homework number</li>
+                    <li> The problem number</li>
+                    <li> Your GradeScope name</li>
+                    <li> Your Gradescope email address</li>
+                </ul>
+                For group solutions, include the Gradescope name and email address of <em>every</em> group member. If you are typesetting your solutions with LaTeX, please use our solution template.
+            </li>
+
+            <li id="nolate"><b class=dammit>We will not accept
+        late homework for any reason.</b> To offset this rather draconian policy, we will count only the homework problems you actually submit toward your final course grade. Specifically:
+
+                <ul class=compact>
+                    <li> If you submit more than 24 homework problems, only your highest 24 problem scores count. (If you submit everything, this this is equivalent to dropping almost two complete homework sets.)
+                    </li>
+
+                    <li> If you submit fewer than 24 homework problems, your exams will have (slightly) larger weight in the final grade calculation.
+                    </li>
+
+                    <li> You must submit at least half the homework to pass the class.
+                    </li>
+                </ul>
+
+                <p>
+                    <b id="forgiven">We may <em>forgive</em> coursework
+            under extreme circumstances</b>, such as documented illness or injury. Forgiving homework requires a serious long-term issue that prevents submission of multiple homework sets; the regular homework policies already allow missing a few submissions without serious penalty. “Extreme circumstances” for exams do <em>not</em> include travel for job interviews. We will compute your final course grade as if your forgiven work simply do not exist; your other work will have more weight. Please ask Jeff for details.
+                </p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <!----------------------------------------------------------------->
+        <!----------------------------------------------------------------->
+        <!----------------------------------------------------------------->
+        <h3 id="form">Form: How to write</h3>
+
+        <p>
+            Please make it easy for the graders to figure out what you mean in the short time they have to grade your solution. If your solutions are difficult to read or understand, you will lose points.</p>
+
+        <h4 id="honest">Be Honest</h4>
+
+        <ul>
+
+            <li id="cite"><b>Write <em>everything</em> in your own words, and properly cite <em>every</em> outside source you use.</b> We <em>strongly</em> encourge you to use <em>any</em> outside source at your disposal, provided you use your sources properly and give them proper credit. If you get an idea from an outside source, citing that source will not lower your grade. Failing to properly cite an outside source&mdash;thereby taking credit for ideas that are not your own&mdash;is plagiarism.
+
+                <p><b>The <em>only</em> sources that you are <em>not</em> required to cite</b> are the official course materials (lectures, lecture notes, homework and exam solutions <em>from this semester</em>) and sources for prerequisite material (which we assume you already know by heart).
+
+                    <li id="collab"><b>List everyone you worked with on each homework problem.</b> Again, we strongly encourage you to work together, but you must give everyone proper credit. If you work in a group of 20 students, then all 20 names should appear on your homework solution. If someone was particularly helpful, describe their contribution. Be generous; if you're not sure whether someone should be included in your list of collaborators, include them. For discussions in class, in section, or in office hours, where collecting names is impractical, it's okay to write something like "discussions in class".
+
+                        <li>
+                            Please see <a href="integrity.html">our academic integrity policy</a> for more details.
+
+        </ul>
+
+        <h4>Be Clear</h4>
+
+        <ul>
+
+            <li>
+                <b>Write legibly.</b> If we can't read your solution, we can't give you credit for it. If you have sloppy handwriting, use <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a>. Please don't submit your first draft. Writing legibly also helps you <em>think</em> more clearly.
+
+                <ul>
+                    <li>
+                        We <em>strongly</em> recommend typesetting your homework using <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a>. (In particular, we recommend <a href="http://www.uoregon.edu/~koch/texshop/texshop.html">TeXShop</a> for Mac OS X, <a href="http://www.tug.org/texlive/">TeX Live</a> for Linux (already included in most distributions), and <a href="http://www.miktex.org/">MiKTeX</a> for Windows.) We will provide a LaTeX template for homework solutions.
+
+                        <li>
+                            You are welcome to submit scans of hand-written homework solutions, but please write clearly using a black pen on plain white unlined paper, and please use a high-quality <a href="http://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/">scanning app</a> (or an actual high-quality scanner). We recommend printing your scanned document to check for readability before submitting.
+                </ul>
+
+                <li>
+                    <b>Write sensibly.</b> You will lose points for poor spelling, grammar, punctuation, arithmetic, algebra, logic, and so on. This rule is <em>especially</em> important for students whose first language is not English. Writing sensibly also helps you <em>think</em> sensibly.
+
+                    <li>
+                        <b>Write carefully.</b> We can only grade what you actually write, not what you mean. We will not attempt to read your mind. If your answer is ambiguous, the graders are explicitly isntructed to choose an interpretation that makes it wrong. Writing carefully also helps you <em>think</em> carefully.
+
+                        <li id="sins">
+                            <b class=dammit>Avoid the Three Deadly Sins.</b> Yes, we are completely serious about these. We reserve the right to add more Deadly Sins later in the course.
+
+                            <ol>
+                                <li> <b>Write solutions, not examples.</b> Don't describe algorithms by showing the first two or three iterations and then writing "and so on". Similarly, don't try to prove something by demonstrating it for a few small examples and then writing &ldquo;do the same thing for all $n$&rdquo;. Any solution that includes phrases like &ldquo;and so on&rdquo;, &ldquo;etc.&rdquo;, &ldquo;do this for all $n$&rdquo;, or “repeat this process” <b>automatically gets a score of zero</b>. Those phrases indicate <em>precisely</em> where you should have used iteration, recursion, or induction but didn’t.
+
+                                    <li>
+                                        <b>Declare all your variables.</b> Whenever you use a new variable or non-standard symbol for the first time, you must specify both its <em>type</em> and its <em>meaning</em>, in English. Similarly, when you describe any algorithm, you must first describe <em>in English</em> precisely what the algorithm is supposed to do (not just how it works). Any solution that contains undeclared variables <b>automatically gets a score of zero</b>, unless it is otherwise <em>perfect</em>. This rule is especially important for dynamic programming problems.
+
+                                        <li>
+                                            <b>Never use weak induction!</b> Always, always, always use a strong induction hypothesis, even in proofs that only apply the induction hypothesis at $n-1$. Why would you even want to tie $n-2$ hands behind your back? Any proof that uses a weak induction hypothesis <b>automatically gets a score of zero</b>, unless it is otherwise <em>perfect</em>. Basically, weak induction should die in a fire.
+                            </ol>
+
+                            <li><b>State your assumptions.</b> If a problem statement is ambiguous, explicitly state any additional assumptions that your solution requires. (Please also ask for clarification in class, in office hours, or on Piazza!) For example, if the performance of your algorithm depends on how the input is represented, tell us exactly what representation you require.
+
+                                <li><b>Don't submit code.</b> Describe your algorithms using clean, human-readable pseudocode. Your description should allow a bright student <em>in CS 225</em> to easily implement your algorithm in <em>their</em> favorite language.
+
+                                    <li><b>Don't submit your first draft.</b> Revise, revise, revise. After you figure out the solution, then think about the right way to present it, and only <em>then</em> start writing what you plan to submit. Yes, even on exams; do your initial scratch work on the back of the page.
+
+        </ul>
+
+        <h4>Be Concise</h4>
+
+        <ul>
+            <li> <b>Keep it short.</b> Every homework problem can be answered <em>completely</em> in at most two typeset pages or five handwritten pages; most problems require considerably less. Yes, I am aware of the crushing irony.
+
+                <li><b>Omit irrelevant details.</b> Don't write "red-black tree" when you mean "balanced binary tree" or "dictionary". Don't submit code; We want to see your ideas, not syntactic sugar. If your solution requires more than two typeset pages, you are providing too many irrelevant details.
+
+                    <li>
+                        <b>Don't regurgitate.</b> Don't explain binary search; just write "binary search". Don't write the pseudocode for Dijkstra's algorithm; just write "Disjktra's algorithm". If the solution appears on page 6 of Jeff's notes, just write "See page 6 of Jeff's notes." If your answer is similar to something we've seen in class, just say so and (carefully!) describe your changes. You will lose points for vomiting.
+
+                        <li><b>Autmatic zero</b>: We will give an automatic zero to answers which we consider to be too long, unclear, and repetitious. We will also do it if we can not follow the logic of your answer. We might even do it without reading them. If you do not know the answer then use IDK - don't waste your time and don't waste our time.
+                        </li>
+        </ul>
+
+        <hr>
+
+        <h3 id="content">Content: What to write</h3>
+
+        <ul>
+            <li><b>Answer the right question.</b> No matter how clear and polished your solution is, it's worthless if it doesn't answer the question we asked. Make sure you understand the question before you start thinking about how to answer it. If something is unclear, ask for clarification! This is especially important on exams.
+
+                <li><b>Justify your answers.</b> You must provide a brief justification for your solutions, as <em>evidence that you understand</em> why they are correct. Unless we explicitly say otherwise, we generally do <em>not</em> want a complete proof of correctness—because complete proofs would be too long, tedious, and unenlightening—but rather a high-level sketch of the major steps in the proof. <b>Proofs/justifications are only required on exams if we specifically ask for them.</b>
+
+                    <li>
+                        By default, if a homework or exam problem asks you to describe an algorithm, you need to do several things to get full credit:
+
+                        <ul>
+                            <li> If necessary, <b>formally restate the problem</b> in terms of combinatorial objects such as sets, sequences, lists, graphs, or trees. In other words, tell us what the problem is <em>really</em> asking for. This is often the hardest part of designing an algorithm.
+
+                                <li> <b>Give a concise pseudocode description of your algorithm.</b> Don't regurgitate, and don't turn in code!
+
+                                    <li> <b>Describe a <em>correct</em> algorithm.</b>
+
+                                        <li> <b>Justify the correctness of your algorithm.</b> You usually won't have to do this on exams.
+
+                                            <li> <b>Analyze your algorithm's running time.</b> This may be as simple as saying "There are two nested loops from 1 to <i>n</i>, so the running time is O(<i>n</i>&sup2;)." Or it may require setting up and solving a recurrence, in which case you'll also have to justify your solution.
+
+                                                <li> <b>Describe the fastest correct algorithm you can</b>, even if the problem does not include the words "fast" or "efficient". Faster algorithms are worth more points; brute force is usually not worth much. We will not always tell you what time bound to shoot for; that's part of what you're trying to learn. <b>However, if your algorithm is incorrect, you won't get any points, no matter how fast it is!</b>
+
+                        </ul>
+
+                        Some problems may deviate from these default requirements. For example, we may ask you for an algorithm that uses a particular approach, even though another approach may be more efficient. (Answer the right question!)
+
+        </ul>
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </section>
+    <p>This policy statement is unfortunately necessary, thanks to the actions of a tiny minority of students. If you have any questions or concerns, please don't hesitate to ask in lecture, in lab, during office hours, on Piazza, or by email. </p>
+
+    <p />
+
+    <b class=dammit><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">tl;dr</a>:
+      Be honest.  Cite your sources.  We mean it.  If you need help,
+      please ask. Don't be stupid!</b>
+
+    <ul class=compact>
+        <li> <a href="#cite">Our expectations</a>
+            <ul class=tight>
+                <li> <a href="#cite">Cite your sources</a></li>
+                <li> <a href="#words">Use your own words</a></li>
+                <li> <a href="#stupid">Don't be stupid</a></li>
+            </ul>
+        </li>
+        <li> <a href="#penalties">Penalties</a></li>
+        <li> <a href="#group">Group Work</a></li>
+        <li> <a href="#warning">Warning signs</a></li>
+    </ul>
+
+    <hr>
+    <h3 id="expect">Our expectations</h3>
+
+    <p />
+    <b class=dammit>Each student (or homework group) must write
+      their own solutions, in their own words, and must properly
+      credit all sources.</b>
+
+    <p /> These are the same ethical standards that researchers are expected to follow in their
+    <a href="http://publicationethics.org/category/keywords/plagiarism">formal publications</a>. For comparison, see the guidelines published by the
+    <a href="http://www.acm.org/publications/policies/plagiarism_policy">Association for Computing Machinery (ACM)</a>, the <a href="http://www.ams.org/secretary/ethics.html">American Mathematical Society (AMS)</a>, the
+    <a href="http://www.aps.org/policy/statements/02_2.cfm">American Physical Society (APS)</a>, the
+    <a href="http://www.ieee.org/web/publications/rights/plagiarism_FAQ.html">Institute of Electrical and Electronics Engineers (IEEE)</a>, and the
+    <a href="http://www.siam.org/journals/plagiarism.php">Society for Industrial and Applied Mathematics (SIAM)</a>.
+
+    <p /> For more information and examples, see any of the following:
+    <ul class=compact>
+        <li>
+            <a href="https://wiki.cites.illinois.edu/wiki/display/undergradProg/Honor+Code">The CS department's policies and recommendations</a>
+        </li>
+        <li>
+            The College of Engineering's <a href="https://wiki.cites.illinois.edu/wiki/display/ugadvise/Academic+Integrity+-+A+Guide+for+Engineering+Students"> Guide to
+        Academic Integrity</a>
+        </li>
+        <li>
+            The Provost Office's <a href="http://www.provost.illinois.edu/academicintegrity/students.html">Students’ Quick Reference Guide to Academic Integrity</a>
+        </li>
+        <li><a href="http://admin.illinois.edu/policy/code/article1_part4_1-402.html">Article 1, Part 4 of the Student Code</a>.
+        </li>
+    </ul>
+    If you have any doubts about whether something constitutes plagiarism, talk to Jeff or the TAs, and err on the side of caution.
+
+    <hr />
+    <h4 id="cite">Cite Your Sources</h4> We strongly encourage you to use any printed, online, or living resource at your disposal to help you solve homework problems, but you must cite your sources.
+    <ul class=compact>
+        <li> If you use an idea from a book, cite the book.
+            <li> If you use an idea from a paper, cite the paper.
+                <li> If you use an idea from <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>, cite Wikipedia.
+                    <li> If you use an idea from <a href="http://cs.stackexchange.com/">CS StackExchange</a>, <a href="http://meta.cstheory.stackexchange.com/questions/352/how-will-you-cite-a-discussion-on-this-site-in-your-paper">cite</a> CS StackExchange.
+                        <li> If you use an idea from last semester's homework solutions, cite last semester's homework solutions.
+                            <li> If you use an idea from another student, cite that student.
+                                <li> If you use an idea from the bathroom grafitti at Kam's, cite the bathroom grafitti at Kam's.
+                                    <li> If you use an idea from your mom, cite your mom.
+    </ul>
+
+    There are only two exceptions to this rule. <b>You are not
+    required to cite the following:</b>
+    <ul class=compact>
+        <li>
+            Official course materials (lectures, lecture notes, homework and exam solutions <em>from this semester</em>)
+        </li>
+        <li>
+            Sources for prerequisite material (which we assume you already know by heart)
+        </li>
+    </ul>
+
+    Submitting someone else's work without giving them proper credit is plagiarism, <em>even if you have the other person's explicit
+      permission</em>. Citing your sources will <em>not</em> lower your homework grade. Allowing someone else to use your ideas without giving you credit is also an academic integrity violation.
+
+    <h4 id="words">Use Your Own Words</h4> Verbatim duplication of <em>any</em> source,
+    <em>even with proper citation</em>, is plagiarism. In particular:
+    <ul class=compact>
+        <li> Copying verbatim from the lecture notes is plagiarism.</li>
+        <li> Copying verbatim from a textbook solution manual is plagiarism.</li>
+        <li> Copying verbatim from old CS 374 or 473 homework or exam solutions is plagiarism.
+        </li>
+        <li> Submitting work done entirely by another student is plagiarism, <b>even if that student is part of your
+        homework group</b>.
+        </li>
+
+        <li> Allowing another student to copy your work verbatim is also an academic integrity violation, <b>even if that student is
+        part of your homework group</b>.
+        </li>
+    </ul>
+
+    <p /> Classes in some other departments allow and even encourage verbatim copying in small doses. For example, if you want to claim that an expert holds an important or controversial opinion, it is usually better (more honest, more accurate) to quote them verbatim, instead of rewriting their opinion in your words.
+
+    <p />
+
+    <table class="quotebox">
+
+        <tr>
+            <td class="quote">
+                <b>Immortality.</b> I notice that as soon as writers broach this question they begin to quote. I hate quotation. Tell me what you know.
+            </td>
+        </tr>
+        <tr>
+            <td class="author">
+                — Ralph Waldo Emerson, <em>Journals</em> (May 1849)
+            </td>
+        </tr>
+
+        <tr>
+            <td class="quote">
+                Students frequently overuse direct quotation in taking notes, and as a result they overuse quotations in the final paper. Probably only about 10% of your final manuscript should appear as directly quoted matter. Therefore, you should strive to limit the amount of exact transcribing of source materials while taking notes.
+            </td>
+        </tr>
+        <tr>
+            <td class="author">
+                — James D. Lester, <em>Writing Research Papers</em> (1976)
+            </td>
+        </tr>
+
+    </table>
+
+    <p /> But computer science classes are different. We won't ask you to defend a hypothesis or opinion using evidence or rhetoric. What we will ask for are formal, logical, mathematical arguments. Expert opinion is irrelevant here; the math must speak for itself. In particular,<b> we are asking you to demonstrate your expertise</b> in formal, logical, mathematical reasoning. You can only demonstrate expertise in something by actually doing it. (The same argument goes for programming classes. Your MPs are not just asking you for working code; they are asking you for
+    <em>evidence of your ability to independently produce</em> working code.)
+
+    <p /> That said, if you want to use an algorithm from Jeff's notes in your solution, just use it (and cite it) and carefully describe any necessary changes.
+
+    <h4 id="stupid">Don't Be Stupid</h4> There are several more serious ways to violate the university's academic integrity policies, such as collaborating with or copying from another student during an exam, hiring an impostor to write homework solutions or take exams for you, changing the answers on a graded homework or exam before asking for a regrade, falsely claiming to have submitted a homework or taken an exam, and modifying or destroying other students' graded work. But you already know not to do anything <em>that</em> stupid!
+
+    <hr>
+    <h3 id="penalties">Penalties</h3>
+
+    <p />
+    <ul>
+        <li>
+            The default penalty for cheating on a homework problem is a grade of zero <em>on the entire homework set</em>, which we will <em>not</em> drop when we compute your final course grade. (In practice, the effect of this penalty is about half of a letter grade.)
+        </li>
+
+        <li>The default penalty for cheating on an exam is a grade of zero <em>on the entire exam</em>, which we will <em>not</em> drop when we compute your final course grade. (In practice, the effect of this penalty is roughly two full letter grades.)
+        </li>
+
+        <li>
+            The penalty for a second offense of any kind, or a particularly egregious first offense, is an F in the course.
+        </li>
+    </ul>
+
+    These penalties are consistent with
+    <a href="https://agora.cs.illinois.edu/display/undergradProg/Honor+Code">the CS department's recommendations</a>.
+
+    <p/> In accordance with <a href="https://agora.cs.illinois.edu/display/undergradProg/Honor+Code">department</a>,
+    <a href="https://wiki.engr.illinois.edu/display/ugadvise/Academic+Integrity+-+A+Guide+for+Engineering+Students">college</a>, and <a href="http://www.provost.illinois.edu/academicintegrity/students.html">university</a> policy, we report <em>all</em> academic integrity cases to the Computer Science department, to the student's college, and to the Senate Committee on Student Discipline. We also report offenses by computer science graduate students to their advisors. Multiple offenses, even in different classes, can result in suspension or expulsion.
+
+    <p /> Our high expectations for graduate students extend to issues of academic integrity. A notice of any cheating offense by a graduate student will be entered into their file, where it will be seen by the student's advisor, as well as their qual, prelim, and thesis committees. <b>Many professors refuse to advise MS or PhD
+      students who have committed even a single cheating offense; the
+      risk to our professional careers if a student acts unethically
+      in research is simply too high.</b> If you cheat, you may be signing your own academic death warrant.
+
+    <p /> Regardless of whether it constitutes plagiarism, or whether you get caught, getting too much help on your homework will hurt your final grade. If you don't learn how to solve algorithmic problems on your own,
+    <a href="http://tech.mit.edu/V130/N14/physicscheating.html">you will perform poorly</a> on the (closed-book, closed-notes) exams, which make up 70% of your final course grade. Several students with &ge;90% homework averages have failed this course.</p>
+
+    <hr>
+    <h3 id="group">Group work</h3>
+
+    <p /> Groups of up to three people are allowed to submit a single solution for each homework. Every member of the group receives the same grade and the same credit for the entire assignment. That means every member of the group is responsible for the entire assignment.
+
+    <p />
+    <b class=dammit>Group solutions must represent an honest
+      collaborative effort by all members of the group.</b> In particular, groups must <em>not</em> delegate one problem to each group member; only the students who actively worked on a problem may add their names to the solution.
+    <b>At a minimum, you must <em>read, understand, and approve</em> anything
+      submitted with your name on it. Allowing someone else to add
+      your name to a solution to which you made no contribution is
+      plagiarism.</b> This does not mean that every student in a group must contribute
+    <em>good ideas</em> or must help in the actual <em>writing</em> of every group solution. Asking "stupid" questions, proposing bad ideas, shooting down bad ideas, working out examples (even if they don't appear in the solution), uncovering bugs, and even just acting as a sounding board for other group members are all legitimate contributions.
+
+    <p /> If a submitted homework contains plagiarized material, we will separately determine each student's culpability (if any) and penalty (if any), in accordance with
+    <a href="http://studentcode.illinois.edu/article1_part4_1-403.html">Student
+    Code</a>. <b>By default, every member of the homework group will
+    be given the same penalty.</b> (Again, this is the same standard that is applied to coauthors of research papers.) If you cheat, you are not only endangering your grade, and possibly your academic career, but your colleagues’ as well.
+
+    <p /> As illustrations, consider the following scenarios. All scenarios involve a group of three students (A, B, and C) collaborating on a three-problem homework set, who argee in advance that each student will write up and submit the solution for one problem — A will handle problem 1, B will handle problem 2, and C will handle problem 3 — with all three names at the top. Variants of all these scenarios have actually happened. Yes, even the last two.
+
+    <ul>
+        <li>
+            <i>Each student writes up a complete solution for their
+        problem, in their own words and properly citing of all
+        sources, but with no involvement from the other group members.
+        The students then email their solutions to each other; after
+        some discussion, everyone agrees to submit all three solutions
+        exactly as written.  Each student submits the solution they
+        wrote, with all three names at the top.</i>
+
+            <p />
+            <b>Everything's cool.</b>
+        </li>
+
+        <li>
+            <i>All three group members first discuss and jointly work out
+        sketches of solutions for all three problems.  Then each
+        student writes a detailed solution to their individual
+        problem, in their own words and properly citing all sources.
+        With no further discussion, each student submits the solution
+        they wrote, with all three names at the top.</i>
+
+            <p />
+            <b>Everything's cool.</b>
+
+            <li>
+                <i>Each student writes up a complete solution for their
+          problem, in their own words and properly citing of all
+          sources, but with no involvement from the other group
+          members.  With no further discussion, each student submits
+          the solution they wrote, with all three names at the top.</i>
+
+                <p />
+                <b>All three students are guilty of plagiarism and would
+            receive an undroppable zero on the entire homework set.</b>
+            </li>
+
+            <li><i>All three group members first discuss and jointly work
+        out sketches of solutions for all three problems.  Student A
+        later finds a solution to problem 1 on the web and submits it
+        without proper citation, with all three names, with no further
+        discussion with B and C.  Students B and C independently write
+        up solutions to their problems, properly citing all sources,
+        and submit them with all three names, with no further
+        discussion.</i>
+
+                <p />
+                <b>Student A is guilty of plagiarism and would receive an
+          undroppable zero on the entire homework set.  Students B and
+            C followed the rules; their problem 1 would be
+            <a href="hw-policies.html#forgiven">forgiven</a>.</b>
+            </li>
+
+            <li>
+                <i>Student B finds a solution to problem 2 on the web and
+            submits it verbatim with all three names at the top of the
+            first page, as the group agreed.  A and C had no knowledge
+            of student B's plagiarism, and no other involvement in
+            solving problem 2.  Students A and C collaborate on
+            problems 1 and 3, with no involvement from student B, and
+            submit a properly written solution with all three names,
+            as they had agreed.</i>
+
+                <p />
+                <b>All three students are guilty of plagiarism, although for
+            different reasons.  All three students would receive an
+            undroppable zero on the entire homework set.</b>
+            </li>
+
+            <li>
+                <i>The solution for problem 3 is a verbatim copy of another
+          source.  Immediately after submitting the homework, but
+          before the plagiarism is discovered, all three students drop
+          the course.  None of the students responds to the initial
+          charge of plagiarism or to repeated emails from the
+          instructor asking to discuss the situation.</i>
+
+                <p />
+                <b>All three students are guilty of plagiarism.  An academic
+          integrity infraction is added to their permanent records
+          even though they dropped the course.</b>
+
+            </li>
+            <li>
+                <i>All three group members discuss and jointly work out
+            sketches of solutions for all three problems.  Student A
+            later finds a solution to problem 3 on the web and emails
+            the text (copied verbatim) to student C, with a clear
+            citation to the original source.  Student C copies the
+            text of student A's email verbatim into his solution,
+            without consulting or citing the original source, under
+            the mistaken belief that the text is student A's own work.
+            All three students submit their respective solutions with
+            all three names at the top, with no other involvement by
+            the other group members.</i>
+
+                <p />
+                <b>Student C is technically guilty of plagiarism, but they
+            would probably receive only a warning.  Problem 3 would
+            be <a href="hw-policies.html#forgiven">forgiven</a> for
+            all three students.</b>
+            </li>
+
+            <li>
+                <i>Each student writes up a complete solution for their
+          problem, with no involvement from the other group members.
+          A and C write their solutions in their own words, properly
+          citing all sources, but B copies their solution verbatim
+          from another source.  B and C email their solutions to the
+          entire group.  A does not respond to B and C's email or send
+          their own solution.  After some discussion (without A),
+          B&nbsp;and C agree to submit their solutions exactly as
+          written, with only B and C named on the first page.  B never
+          reveals that their solution to problem 2 was plagiarized.  A
+          also submits their solution to problem 1, with all three
+          names on the first page, without B and C's knowledge or
+          agreement.</i>
+
+                <p />
+                <b>Let's go through this one carefully.</b>
+                <p />
+                <ul class=compact>
+                    <li><b>Student A is technically guilty of facilitating
+              plagiarism, but would probably receive only a warning,
+              along with (droppable) zeros on problems 2 and 3.</b>
+                    </li>
+
+                    <li><b>Student B is guilty of plagiarism and would receive
+              an undroppable zero on the entire homework set.</b>
+                    </li>
+
+                    <li><b>Student C followed the rules.  They would receive a
+              (droppable) zero on problem 1; their problem 2 would be
+              <a href="hw-policies.html#forgiven">forgiven</a>; and
+              they would be <em>strongly</em> encouraged to find new
+              homework partners.</b>
+                    </li>
+                    <li><b>The instructor has a headache.</b> Instructor mad.
+                    </li>
+                </ul>
+            </li>
+    </ul>
+
+    <hr>
+    <h3 id="warning">Warning signs</h3>
+
+    <p /> Almost every instance of plagiarism I have seen was motivated by a combination of two factors.
+
+    <ul>
+        <li>
+            <b>Desperation:</b> <i>The student
+          feels overwhelming pressure to improve
+          their performance, despite gaps in
+          their understanding.  The student
+          might be overwhelmed by work in other
+          classes, or financial pressure to
+          graduate, or parental/cultural
+          expectations.  This might be the
+          hardest course the student has ever
+          taken, and their merely <b>good</b> performance is a blow to
+          their aspirations or self-image.  The student may be
+          suffering from
+          <a href="http://en.wikipedia.org/wiki/Impostor_syndrome"
+          >Impostor Syndrome</a>,
+          the feeling that they really aren't good enough to be here
+          (despite evidence to the contrary), and that their fraud
+          will be uncovered if they admit that they can't do
+          something.  The student might have trouble with English, and
+          therefore worries that rewriting someone else's text would
+          distort the meaning.  Perhaps the student is dealing with
+          depression, serious illness, divorce, or a death in the
+          family.  Or maybe the student simply sees no way to satisfy
+          the instructor's unreasonable or unclear expectations
+          without cheating.</i>
+
+            <blockquote>
+                <p /><b class=dammit>If you find yourself in this situation,
+            ask for help!</b> If you need help understanding the material, come to office hours, ask questions in class, ask questions on the newsgroup, talk to your fellow students. The instructional staff will even make extra appointments to help guide you through the material or give you feedback on tentative solutions, <em>but only if you ask</em>. (But please remember that our goal is to help you master the material, not just to help you get a better grade.)
+
+                <p /> If you think a homework problem is unclear, please ask for clarification. Your confusion might indicate a gap in your understanding of the course material, but it might also indicate that the question is poorly stated, unfairly hard, or even impossible.
+                <b>Our job is to help you learn the material;
+            <em>please</em> let us know if we aren't doing our job. </b>
+
+                <p /> We do expect solutions to be written in clear, coherent English. If you are thinking of copying someone else's words because you are uncomfortable with English, you are probably better off taking a class to improve your English instead of this course.
+
+                <p /> Asking for help does not make you "look stupid". Quite the opposite—it means you are smart enough to recognize your own limitations and work to overcome them. Asking for clarification is not an insult to the instructor or the TAs. Quite the opposite—questions are valuable feedback that we can use to teach more effectively. <em>Everyone</em> suffers from Impostor Syndrome occasionally,
+                <a href="http://academia.stackexchange.com/questions/2219/how-should-i-deal-with-discouragement-as-a-graduate-student/2221#2221">including your professors</a>. Most importantly, please remember that your grade is not a statement about your intelligence, your potential for success, or your worth as a human being; it's only feedback about your mastery of the course material.
+
+                <p />If your situation is very serious, or not directly related to this class, you may prefer to discuss your situation with your department or college advisor, a family member, a trusted friend, or
+                <a href="http://www.counselingcenter.illinois.edu/">the
+          counseling center</a>, but please talk to <em>someone</em>.
+            </blockquote>
+
+            <p />
+            <li>
+                <b>Different expectations:</b> <i>The student is used to an
+          academic culture where plagiarism is tolerated or even
+          encouraged.  Maybe they come from a high school with
+          litigious parents who discourage teachers from punishing
+            cheaters.  Maybe they come from a country where students
+            <!-- - -->
+            are <em>expected</em> to parrot back their instructors'
+          exact words to demonstrate understanding.  Maybe cheating
+          was inconsistently or ineffectively enforced in their past
+          classes; they've seen cheating students succeed (getting
+          higher grades, or even better jobs) where honest students
+          have suffered.</i>
+
+                <blockquote>
+                    <b>Please be aware that our standards for academic
+              integrity may be different than what you're used to.</b> This point is especially important for international students. The standards we apply in this class are a proper subset of the standards applied to
+                    <a href="http://www.vpaa.uillinois.edu/Policies/ai_toc.cfm#III">Illinois faculty</a> and most other
+                    <a href="http://www.youtube.com/watch?v=qc_es2tyweI">professional scientific researchers</a>. (Fortunately, we don't have to worry about
+                    <a href="http://www.hms.harvard.edu/integrity/authorship.html">authorship
+            and author ordering</a> policies,
+                    <a href="http://en.wikipedia.org/wiki/Fabrication_(science)">accurate recording and reporting of experimental results</a>, or ethical issues with
+                    <a href="http://en.wikipedia.org/wiki/Informed_consent">human</a> or animal test subjects.)
+
+                    <p /> Our job as instructors is to help you master the course material. We ask that you write everything yourself so that we can make an <em>honest</em> assessment of <em>your</em> facility with the course material, and therefore give you <em>useful</em> feedback. We allow wide latitude in choosing the resources you need to learn, because we believe that freedom will help you learn more effectively. We trust that you will use those resources responsibly and ethically. Plagiarizing other people's work to improve your grade is an abuse of that trust. It is unfair to us and to your fellow students.
+
+                    <p /> We are painfully aware of differences in cheating policies and their enforcement in different classes, both within and outside the computer science department. Within the guidelines of the
+                    <a href="http://admin.illinois.edu/policy/code/article1_part4_1-402.html">Student
+            Code</a>, the university gives faculty broad discretion (under the rubric of academic freedom) in defining what constitutes "cheating" and how stringently cheating policies are enforced. Sometimes these differences lead students to believe that cheating policies are overly restrictive or inconsistent, and so can be justifiably ignored.
+
+                    <p /> We believe that our policies are fair, but even with the best of intentions, people make mistakes. <b class=dammit>If
+            you believe that any policies in this course are unclear,
+            unfair, or inconsistently applied, we <em>strongly</em> encourage
+              you to voice your concerns
+              to <a href="mailto:sariel@illinois.edu">the instructor</a>,
+              any of the teaching asisstants, and/or
+              <a href="mailto:pitt@illinois.edu,chekuri@illinois.edu"
+              >the department administration</a>.
+            </b> If you wish to complain anonymously, feel free to send me an anonymous private message on Piazza, or leave a note in my mailbox, with my assistant Elaine Wilson, or under my office door.
+
+                </blockquote>
+            </li>
+            <li>
+                <b>Apathy:</b> Very rarely, students cheat simply because they want a good grade (or a degree) at all costs, with no thought whatsoever for learning or fairness. We have absolutely no sympathy for these students. You have every right to rob yourself of the educational opportunity you (or your advisor, or your parents) have paid for, but don't expect us to help you.
+            </li>
+    </ul>
+    </section>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</body>
+
+</html>
