@@ -1,4 +1,6 @@
 section.information {
+    margin: auto;
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -13,6 +15,12 @@ section.information .card {
 section.quicklinks {
     margin: auto;
     text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+section.quicklinks button{
+    margin: 1vh;
 }
 
 h1 {
@@ -22,10 +30,38 @@ h1 {
 }
 
 body section.content {
-    padding: 10vh;
+    padding: calc(2vh + 2vw);
 }
 
 a, a:hover {
     color: unset;
     font-weight: bolder;
+}
+
+.collapse:not(.show) {
+    display: unset;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.navbar-brand {
+    text-overflow: ellipsis;
+    max-width: 100vw;
+    font-size: 1.5vh;
+}
+
+table.table {
+    table-layout: fixed;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    section.information {
+        flex-direction: column;
+    }
+    body section.content {
+        padding: 0;
+    }
 }
